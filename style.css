@@ -1,10 +1,24 @@
-html,
-body {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
+    background-image: url(bg-image.avif);
+    background-color: #00000049;
     overflow: hidden;
+}
+
+.main {
+    background: transparent;
+    position: unset;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 
 .btn {
@@ -20,6 +34,8 @@ body {
     font-size: 20px;
     border-radius: 12px;
     transform: scale(1.5);
+    margin-top: 50vh;
+    margin-left: 60vw;
     letter-spacing: 1px;
 }
 
@@ -38,7 +54,7 @@ body {
 .btn::before {
     content: "";
     background: linear-gradient(45deg,
-        #FF0000, #FF7300, #FFFB00, #48FF00, 
+        #ff0000, #FF7300, #FFFB00, #48FF00, 
         #00FFD5, #002BFF, #FF00C8, #FF0000
     );
     position: absolute;
@@ -72,4 +88,10 @@ body {
 .btn:active {
     color: #000;
     font-weight: bold;
+}
+
+.heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    color: white;
 }
