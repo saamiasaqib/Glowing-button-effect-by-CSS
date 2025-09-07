@@ -3,6 +3,7 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: #000000;
 }
 
 .btn {
